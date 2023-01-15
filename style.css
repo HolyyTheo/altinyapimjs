@@ -1,0 +1,487 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:"Montserrat-ExtraLight" ;
+    src: url(Montserrat-ExtraLight.ttf);
+}
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: "Montserrat-ExtraLight";
+}
+
+.parcali{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+}
+.dikey{
+
+    position: absolute;
+    font-size: 45px;
+    left: -150px;
+    width: auto;
+
+    padding: 40px;
+    transform: rotate(270deg); 
+    top: 300px;
+}
+.cerceve{
+    position: absolute;
+    font-size: 45px;
+    right: 50px;
+    border: 2px solid;
+    border-color:#6a2431;
+    width: 90%;
+    top: 50px;
+    height: 800px;
+
+    margin: auto;
+    float: right;
+
+
+}
+.numara{
+    font-size: 200px;
+    margin-top: 240px;
+    margin-left: 20px;
+    float: left;
+}
+.content{
+    font-size: 47px;
+    margin-top: 280px;
+    margin-left: 20px;
+    
+    float: left;
+    
+}
+
+.container
+{
+    position : relative;
+    float: right;
+    top: 100px;
+    right: 150px;
+    width: 600px;
+    height: 600px;
+    border: 2px solid #6a2431;
+    border-radius: 50%;
+
+}
+.rghtside{
+ position: absolute;
+ float: right;
+ left: 0;
+ top: 0;
+
+}
+
+.container .icon
+{
+ display: flex;
+
+ justify-content: space-between;
+ position: relative;
+ left:-50%;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ cursor: pointer;
+
+
+}
+.yazi{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100px;
+    height: 100px; 
+    color:#6a2431;
+    border-radius: 50%;
+    margin-top: 250px;
+    transition: 0.5s;
+    margin-left: 280px;
+    font-weight: bold;
+    transform: rotate(calc(360deg / 11 * var(--i)));
+    transform-origin: 200px;
+    z-index: 100;
+}
+
+.container .icon .imgBx1
+{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-color: black;
+    margin-top: 250px;
+    background-color: white;
+
+    transform: rotate(calc(360deg / 11 * var(--i)));
+    transform-origin: 340px;
+
+
+}
+.container .icon .imgBx
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+
+
+    border-radius: 50%;
+    margin-top: 250px;
+    transition: 0.5s;
+
+    transform: rotate(calc(360deg / 11 * var(--i)));
+    transform-origin: 340px;
+    z-index: 100;
+
+
+}
+
+
+
+
+
+.container .icon .imgBx img
+{
+
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    
+    transition: 0.5;
+}
+
+.imgBx.active
+{  
+
+
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 250px;
+    transition: 0.5s;
+    
+    transform: rotate(calc(360deg / 11 * var(--i)));
+    transform-origin: 360px;
+    z-index: 100;
+    overflow: hidden;
+    animation: flip 33s linear ;
+
+    z-index: 1;
+    pointer-events: none;
+    rotate: 0deg;
+    animation-timing-function: ease ;
+
+
+
+
+}
+
+.container .icon .imgBx.active .yazi{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100px;
+    height: 100px; 
+    color:#6a2431;
+    border-radius: 50%;
+    margin-top: 250px;
+    transition: 0.5s;
+    margin-left: 280px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:50%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+    animation-name: lets;
+    animation-duration: 33s;
+    animation-timing-function: ease ;
+}
+
+
+
+.container .icon .imgBx.active img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:50%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+    animation-name: ters;
+    animation-duration: 33s;
+    animation-timing-function: ease ;
+
+
+
+
+}
+
+
+
+@keyframes ters {
+ 0%
+ {
+    rotate: 0deg;
+}
+9%{
+   rotate: -32deg;
+
+
+
+
+
+
+}
+18%{
+
+
+
+  rotate: -65deg; 
+
+
+
+}
+27%{
+   rotate: -98deg; 
+
+
+}
+36%{
+   rotate: -130deg;
+
+
+
+}
+45%{
+   rotate: -163deg;
+
+
+
+
+}
+54%{
+   rotate: -196deg; 
+
+
+
+}
+63%{
+   rotate: -229deg; 
+
+
+
+}
+72%{
+   rotate: -261deg ;
+
+
+
+}
+81%{
+   rotate: -294deg ; 
+
+
+
+}
+90%
+{
+    rotate: -327deg;
+
+
+
+}
+100%
+{
+    rotate: -360deg;
+
+
+
+}
+}
+
+@keyframes flip
+{
+    0%
+    {
+        rotate: 0deg;
+    }
+    9%{
+       rotate: 32deg;
+
+
+
+
+
+
+   }
+   18%{
+
+
+
+      rotate: 65deg; 
+
+
+
+  }
+  27%{
+   rotate: 98deg; 
+
+
+}
+36%{
+   rotate: 130deg;
+
+
+
+}
+45%{
+   rotate: 163deg;
+
+
+
+
+}
+54%{
+   rotate: 196deg; 
+
+
+}
+63%{
+   rotate: 229deg; 
+
+
+
+}
+72%{
+   rotate:261deg ;
+
+
+
+}
+81%{
+   rotate:294deg ; 
+
+
+
+}
+90%
+{
+    rotate: 327deg;
+
+
+
+}
+100%
+{
+    rotate: 360deg;
+
+
+
+}
+}
+
+@keyframes lets {
+ 0%
+ {
+    rotate: 0deg;
+}
+9%{
+   rotate: -32deg;
+
+}
+18%{
+
+
+
+  rotate: -65deg; 
+
+
+
+}
+27%{
+   rotate: -98deg; 
+
+
+}
+36%{
+   rotate: -130deg;
+
+
+
+}
+45%{
+   rotate: -163deg;
+
+
+
+
+}
+54%{
+   rotate: -196deg; 
+
+
+
+}
+63%{
+   rotate: -229deg; 
+
+
+
+}
+72%{
+   rotate: -261deg ;
+
+
+
+}
+81%{
+   rotate: -294deg ; 
+
+
+
+}
+90%
+{
+    rotate: -327deg;
+
+
+
+}
+100%
+{
+    rotate: -360deg;
+
+
+
+}
+}
+

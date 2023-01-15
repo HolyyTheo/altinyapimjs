@@ -1,0 +1,20 @@
+.circle{
+    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+
+    border: 2px solid;
+    border-color:#6a2431;
+    border-style: dashed ;
+    cursor: pointer;
+    float: right;
+    margin-top: 100px;
+    margin-right: 50px;
+    transform: rotate(0deg);
+	transition: transform 0.7s linear;
+    
+}
