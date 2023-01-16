@@ -9,10 +9,10 @@
     src: url(Montserrat-ExtraLight.ttf);
 }
 body{
- display: flex;
- justify-content: center;
- align-items: center;
- font-family: "Montserrat-ExtraLight";
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "Montserrat-ExtraLight";
 }
 
 .parcali{
@@ -75,29 +75,30 @@ body{
 
 }
 .rghtside{
- position: absolute;
- float: right;
- left: 0;
- top: 0;
+   position: absolute;
+   float: right;
+   left: 0;
+   top: 0;
 
 }
 
 .container .icon
 {
- display: flex;
+   display: flex;
 
- justify-content: space-between;
- position: relative;
- left:-50%;
- width: 100%;
- height: 100%;
- display: flex;
- justify-content: center;
- cursor: pointer;
+   justify-content: space-between;
+   position: relative;
+   left:-50%;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
 
 
 }
 .yazi{
+
     font-size: 15px;
     display: flex;
     flex-direction: column;
@@ -108,11 +109,12 @@ body{
     border-radius: 50%;
     margin-top: 250px;
     transition: 0.5s;
-    margin-left: 280px;
+    margin-left: 200px;
     font-weight: bold;
     transform: rotate(calc(360deg / 11 * var(--i)));
-    transform-origin: 200px;
+    transform-origin: 250px;
     z-index: 100;
+
 }
 
 .container .icon .imgBx1
@@ -198,25 +200,9 @@ body{
 
 }
 
-.container .icon .imgBx.active .yazi{
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100px;
-    height: 100px; 
-    color:#6a2431;
-    border-radius: 50%;
-    margin-top: 250px;
-    transition: 0.5s;
-    margin-left: 280px;
-    font-weight: bold;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:50%;
-    height: 50%;
-    border-radius: 50%;
+.yazi.active{
+
+   
     object-fit: cover;
     align-items: center;
     animation-name: lets;
@@ -248,12 +234,12 @@ body{
 /* Div içerisindeki resimlerin sabit kalmasını sağlayan animasyon */
 
 @keyframes ters {
- 0%
- {
+   0%
+   {
     rotate: 0deg;
 }
 9%{
-   rotate: -32deg;
+ rotate: -32deg;
 
 
 
@@ -271,43 +257,43 @@ body{
 
 }
 27%{
-   rotate: -98deg; 
+ rotate: -98deg; 
 
 
 }
 36%{
-   rotate: -130deg;
+ rotate: -130deg;
 
 
 
 }
 45%{
-   rotate: -163deg;
+ rotate: -163deg;
 
 
 
 
 }
 54%{
-   rotate: -196deg; 
+ rotate: -196deg; 
 
 
 
 }
 63%{
-   rotate: -229deg; 
+ rotate: -229deg; 
 
 
 
 }
 72%{
-   rotate: -261deg ;
+ rotate: -261deg ;
 
 
 
 }
 81%{
-   rotate: -294deg ; 
+ rotate: -294deg ; 
 
 
 
@@ -340,60 +326,60 @@ body{
         rotate: 0deg;
     }
     9%{
-       rotate: 32deg;
+     rotate: 32deg;
 
 
 
 
 
 
-   }
-   18%{
+ }
+ 18%{
 
 
 
-      rotate: 65deg; 
+  rotate: 65deg; 
 
 
 
-  }
-  27%{
-   rotate: 98deg; 
+}
+27%{
+ rotate: 98deg; 
 
 
 }
 36%{
-   rotate: 130deg;
+ rotate: 130deg;
 
 
 
 }
 45%{
-   rotate: 163deg;
+ rotate: 163deg;
 
 
 
 
 }
 54%{
-   rotate: 196deg; 
+ rotate: 196deg; 
 
 
 }
 63%{
-   rotate: 229deg; 
+ rotate: 229deg; 
 
 
 
 }
 72%{
-   rotate:261deg ;
+ rotate:261deg ;
 
 
 
 }
 81%{
-   rotate:294deg ; 
+ rotate:294deg ; 
 
 
 
@@ -414,79 +400,79 @@ body{
 }
 }
 
+
 @keyframes lets {
- 0%
- {
+   0%
+   {
     rotate: 0deg;
 }
 9%{
-   rotate: -32deg;
+ rotate: 32deg;
 
 }
 18%{
 
 
 
-  rotate: -65deg; 
+  rotate: 65deg; 
 
 
 
 }
 27%{
-   rotate: -98deg; 
+ rotate: 98deg; 
 
 
 }
 36%{
-   rotate: -130deg;
+ rotate: 130deg;
 
 
 
 }
 45%{
-   rotate: -163deg;
+ rotate: 163deg;
 
 
 
 
 }
 54%{
-   rotate: -196deg; 
+ rotate: 196deg; 
 
 
 
 }
 63%{
-   rotate: -229deg; 
+ rotate: 229deg; 
 
 
 
 }
 72%{
-   rotate: -261deg ;
+ rotate: 261deg ;
 
 
 
 }
 81%{
-   rotate: -294deg ; 
+ rotate: 294deg ; 
 
 
 
 }
 90%
 {
-    rotate: -327deg;
+    rotate: 327deg;
 
 
 
 }
 100%
 {
-    rotate: -360deg;
+    rotate: 360deg;
 
 
 
 }
 }
-
