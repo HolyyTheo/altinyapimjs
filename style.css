@@ -245,7 +245,7 @@ body{
 
 }
 
-
+/* Div içerisindeki resimlerin sabit kalmasını sağlayan animasyon */
 
 @keyframes ters {
  0%
@@ -327,6 +327,11 @@ body{
 
 }
 }
+
+
+
+
+/* Divlerin dönmesini sağlayan animasyon */
 
 @keyframes flip
 {
